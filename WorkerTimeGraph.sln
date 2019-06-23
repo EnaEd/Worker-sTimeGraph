@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerTimeGraph.Wpf", "WorkerTimeGraph.Wpf\WorkerTimeGraph.Wpf.csproj", "{D2B676A5-A4C6-496C-AA65-9F166F1CA9C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerTimeGraph.Core", "WorkerTimeGraph.Core\WorkerTimeGraph.Core.csproj", "{69FBB02D-8EAA-4555-9788-B0A3795EC0ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2B676A5-A4C6-496C-AA65-9F166F1CA9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B676A5-A4C6-496C-AA65-9F166F1CA9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B676A5-A4C6-496C-AA65-9F166F1CA9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B676A5-A4C6-496C-AA65-9F166F1CA9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69FBB02D-8EAA-4555-9788-B0A3795EC0ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69FBB02D-8EAA-4555-9788-B0A3795EC0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69FBB02D-8EAA-4555-9788-B0A3795EC0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69FBB02D-8EAA-4555-9788-B0A3795EC0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F3D91BF-5E4F-473F-BAC6-1FA0DC32DD60}
+	EndGlobalSection
+EndGlobal
