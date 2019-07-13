@@ -9,9 +9,33 @@
     mc:Ignorable="d"
     d:DesignHeight="450" d:DesignWidth="800">
     <Grid ShowGridLines="True">
-        <ListView HorizontalAlignment="Center"
+        <Grid.Resources>
+            <ImageBrush x:Key="Excel" ImageSource="/Images/Blackvariant-Button-Ui-Ms-Office-2016-Excel-2.ico" Stretch="Uniform"/>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--<ListView HorizontalAlignment="Center"
                   VerticalAlignment="Center">
             
-        </ListView>
+        </ListView>-->
+        <Image/>
+        <Label Name="excel" Grid.Column="3" MouseLeftButtonDown="Excel_MouseLeftButtonDown" Width="50" Height="50"  Background="{StaticResource Excel}"/>
+        <DataGrid Name="staffGraph" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="3" Background="Aqua">
+            
+        </DataGrid>
+
+
+
+
+
     </Grid>
 </views:MvxWpfView>

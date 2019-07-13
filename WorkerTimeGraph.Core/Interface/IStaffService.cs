@@ -5,12 +5,12 @@ using WorkerTimeGraph.Core.Model;
 
 namespace WorkerTimeGraph.Core.Interface
 {
-    public interface IStaffService
+    public interface ICRUDService<T> where T:class
     {
-        IEnumerable<Staff> GetAll();
-        Staff Get(int Id);
-        void Update(Staff staff);
+        IEnumerable<T> GetAll();
+        T Get(int Id);
+        void Update(T staff);
         void Delete(int id);
-        void Create(Staff staff);
+        void Create(T staff);
     }
 }

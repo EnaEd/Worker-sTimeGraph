@@ -1,14 +1,11 @@
 ﻿using System.Windows;
-using MvvmCross;
 using MvvmCross.Core;
 using MvvmCross.Platforms.Wpf.Core;
 using MvvmCross.Platforms.Wpf.Views;
-using WorkerTimeGraph.Core.Interface;
-using WorkerTimeGraph.Wpf.Service;
 
 namespace WorkerTimeGraph.Wpf
 {
-    
+
     public partial class App : MvxApplication
     {
         public App()
@@ -17,6 +14,7 @@ namespace WorkerTimeGraph.Wpf
         }
         protected override void OnStartup(StartupEventArgs e)
         {
+            //Mvx.IoCProvider.RegisterType<IConnectionStringService, ConnectionStringService>();
             //Mvx.IoCProvider.RegisterSingleton<IConnectionStringService>(() => new ConnectionStringService());
         }
     }
