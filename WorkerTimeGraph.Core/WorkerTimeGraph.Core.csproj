@@ -7,6 +7,9 @@
   <ItemGroup>
     <Compile Remove="ApplicationContext.cs" />
     <Compile Remove="Interface\IConnectionStringService.cs" />
+    <Compile Remove="Interface\IStaffService.cs" />
+    <Compile Remove="Services\BaseService.cs" />
+    <Compile Remove="Services\StaffService.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +30,10 @@
     <Reference Include="System.Windows.Forms">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
