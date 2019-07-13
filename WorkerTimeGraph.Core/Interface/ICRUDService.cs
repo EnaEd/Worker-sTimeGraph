@@ -10,7 +10,7 @@ namespace WorkerTimeGraph.Core.Interface
         IEnumerable<T> GetAll();
         T Get(int Id);
         void Update(T staff);
-        void Delete(int id);
+        void Delete(T staff);
         void Create(T staff);
     }
 }

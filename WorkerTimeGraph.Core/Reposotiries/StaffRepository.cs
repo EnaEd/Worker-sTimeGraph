@@ -10,17 +10,27 @@ namespace WorkerTimeGraph.Core.Reposotiries
     {
         public void Create(Staff staff)
         {
-            throw new NotImplementedException();
+            Staff staffTemp = Database.Find<Staff>(staff.Id);
+            if (staffTemp is null)
+            {
+                Database.Insert(staff);
+            }
         }
 
-        public void Delete(int id)
+        public void Delete(Staff staff)
         {
-            throw new NotImplementedException();
+            Database.Delete(staff);
         }
 
-        public Staff Get(int Id)
+        public Staff Get(int id)
         {
-            throw new NotImplementedException();
+            Staff staff = Database.Find<Staff>(id);
+            if (staff is null)
+            {
+                return null;
+            }
+            return staff;
+
         }
 
         public IEnumerable<Staff> GetAll()
@@ -30,7 +40,12 @@ namespace WorkerTimeGraph.Core.Reposotiries
 
         public void Update(Staff staff)
         {
-            throw new NotImplementedException();
+            Staff staffTemp = Database.Find<Staff>(staff.Id);
+            if (staffTemp is null)
+            {
+                return;
+            }
+                Database.Update(staff);
         }
     }
 }
