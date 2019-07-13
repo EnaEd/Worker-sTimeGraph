@@ -7,20 +7,20 @@ using System.Windows.Input;
 using System.Windows;
 using System.Windows.Forms;
 using WorkerTimeGraph.Core.Model;
-using WorkerTimeGraph.Core.Services;
 using System.Linq;
+using WorkerTimeGraph.Core.Reposotiries;
 
 namespace WorkerTimeGraph.Core.ViewModel
 {
     public class TimeStatisticViewModel : MvxViewModel
     {
         private List<Staff> _staffs;
-        private StaffService _staffService;
+        private StaffRepository _staffService;
 
 
         public TimeStatisticViewModel()
         {
-            _staffService = new StaffService();
+            _staffService = new StaffRepository();
             InitData();
         }
 
